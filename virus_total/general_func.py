@@ -4,15 +4,18 @@ import time
 import csv
 import xlrd
 from openpyxl import load_workbook
-from virus_total import all_func, catch_file
+import all_func
+import catch_file
+# from virus_total import all_func, catch_file
 
 
 def file_check():
-    """分派副檔名"""
+    """分派副檔名,支援csv、txt、xlsx、xls"""
     check_result = catch_file.file_check()
     if len(check_result) == 0:
         return print("沒找到規範中的檔名或附檔名的檔案")
     for judgment_extension in check_result:
+        print("\r程式運行中", end='')
         extension = os.path.splitext(judgment_extension)[-1]  # 檢查副檔名，呼叫不同的讀取文件方式
         if extension in '.csv':
             excel_csv(judgment_extension)

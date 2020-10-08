@@ -1,7 +1,8 @@
 """存檔功能，如遇特殊檔名會另外做處理"""
 import os
 import re
-from virus_total import grep_dict
+import grep_dict
+# from virus_total import grep_dict
 
 
 def create(path_name_type, input_target, result):

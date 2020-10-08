@@ -1,6 +1,7 @@
 """virus total的API功能，有Domain、url、ip、file"""
 import requests
-from virus_total import storge_result
+import storge_result
+# from virus_total import storge_result
 import base64
 
 
@@ -15,10 +16,11 @@ class General:
         self.ip = "https://www.virustotal.com/api/v3/ip_addresses/"
         self.file_url = 'https://www.virustotal.com/api/v3/files/'
         auth1 = "wang85"
-        auth2 = "Miyu2907"
+        auth2 = "Saber297"
         self.proxy = {"http": "http://{}:{}@192.168.8.29:8080".format(auth1, auth2),
                       "https": "https://{}:{}@192.168.8.29:8080".format(auth1, auth2)}
-        self.cafile = 'D:/wang/py_workdir/PCAcert.cer'
+        self.cafile = './PCAcert.cer'
+        # self.cafile = 'D:/wang/py_workdir/PCAcert.cer'
 
     def domain(self, target):
         response = requests.get(f"{self.domain_url}{target}", headers=self.headers, proxies=self.proxy,

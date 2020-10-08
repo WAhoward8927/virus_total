@@ -1,7 +1,9 @@
 """取得API回傳結果並客製結果"""
 import os
 import time
-from virus_total import all_func, globals
+import all_func
+import globals
+# from virus_total import all_func, globals
 import openpyxl
 from openpyxl import load_workbook
 
