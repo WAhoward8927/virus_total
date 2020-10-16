@@ -20,8 +20,9 @@ def grep_data(web_response, path, spare=None):
         suspicious_num = status.get('suspicious')  # 可疑數量
         for status_name, status_value in status.items():
             count += status_value
-        combined_calc = malicious_num + suspicious_num  # 給解管用的值
+        combined_calc = malicious_num + suspicious_num  # 給加入、解管用的值
         fp.writelines(f"({malicious_num}/{count})\n")
+        fp.writelines(f"可疑數量：{suspicious_num}\n")
         call_count = 0
         if bool(analysis_data) is False and call_count == 0:  # 只讓程式再呼叫一次
             for repeat in range(1):
@@ -58,21 +59,26 @@ def grep_data(web_response, path, spare=None):
         merge_to_dict = dict(zip(company_name, category))
         combine_result = list()  # 有檢測出問題的廠商
         for name, threat_level in merge_to_dict.items():
-            if 'malicious' == threat_level:
+            '''if 'malicious' == threat_level:'''
+            if threat_level != 'harmless' and threat_level != 'undetected':  # 暫時改為非"無害"或"未檢測"皆寫入廠商名
                 combine_result.append(name)
         combine_result_to_str = ', '.join(combine_result)
         target_mode = int(globals.get_demo_value())  # 從globals get取得值,然後轉int給下方使用
+        
         if target_mode == 1:  # 模式選擇區塊
-            _write_excel('./加入黑名單.xlsx', scan_type, source_id, malicious_num, count,
-                         combine_result_to_str, target_mode)
+            _write_excel('./加入黑名單.xlsx', scan_type, source_id, combined_calc, count,
+                         combine_result_to_str, target_mode)  # mode1的掃描總數暫時改為"有害"+"可疑"
+            '''_write_excel('./加入黑名單.xlsx', scan_type, source_id, malicious_num, count,
+                         combine_result_to_str, target_mode)'''
         elif target_mode == 2:
             _write_excel('./解管黑名單.xlsx', scan_type, source_id, combined_calc, count,
                          combine_result_to_str, target_mode)
         else:
             return print("無此功能")
+
     except KeyError:
         fp.writelines(web_response.text)
-
+        
 
 def _write_excel(path, sheet_name, target, quantity, count, harmful, mode):
     """帶入：路徑檔名、工作表名、廠商名、危害總數、掃出有危害的廠商"""
@@ -102,15 +108,15 @@ def _write_data(path, wb, sheet_name, target, quantity, count, harmful, mode):
     if mode == 1:  # 模式1
         designation_sheet = wb[sheet_name]  # 指定工作表
         _fixed()
-        if quantity == 0:
-            pass
-        else:
+        if quantity != 0:  # 只要"有害"或"可疑">0就寫excel
             designation_sheet.append([target, quantity, count, harmful])
             wb.save(path)
+        else:
+            pass
     else:  # 模式2
         designation_sheet = wb[sheet_name]
         _fixed()
-        if quantity == 0:
+        if quantity == 0:  # "有害"或"可疑"需恆等於0就會寫excel
             designation_sheet.append([target, quantity, count])
             wb.save(path)
         else:  # 否則寫此格式或不寫

@@ -48,7 +48,7 @@ def excel_csv(file):
     for top_shelf in rows:  # 從csv逐行讀出是list
         for second_shelf in top_shelf:  # 需再一次loop輸出str
             judgment_func(file, second_shelf)
-            time.sleep(15)  # 免費帳號的等待時間
+            time.sleep(16)  # 免費帳號的等待時間
 
 
 def excel_xls(file):
@@ -59,7 +59,7 @@ def excel_xls(file):
         rows = sheet.get_rows()  # 取得所有列
         for row in rows:
             judgment_func(file, row[0].value)
-            time.sleep(15)  # 免費帳號的等待時間
+            time.sleep(16)  # 免費帳號的等待時間
 
 
 def excel_xlsx(file):
@@ -72,7 +72,7 @@ def excel_xlsx(file):
         for row in rows:  # 出來是tuple,需要再次迭代
             for col in row:
                 judgment_func(file, col.value)
-                time.sleep(15)
+                time.sleep(16)
 
 
 def read_txt(file):
@@ -82,4 +82,4 @@ def read_txt(file):
     for i in range(len(lines)):
         line = lines[i].replace("\n", "")
         judgment_func(file, line)
-        time.sleep(15)
+        time.sleep(16)
