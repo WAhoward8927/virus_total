@@ -1,0 +1,80 @@
+(0/76)
+¥iºÃ¼Æ¶q¡G0
+id: 96.9.77.79
+type: ip_address
+ADMINUSLabs -> harmless, blacklist, clean
+AegisLab WebGuard -> harmless, blacklist, clean
+AlienVault -> harmless, blacklist, clean
+Antiy-AVL -> harmless, blacklist, clean
+AutoShun -> harmless, blacklist, clean
+Avira -> harmless, blacklist, clean
+BADWARE.INFO -> harmless, blacklist, clean
+Baidu-International -> harmless, blacklist, clean
+BitDefender -> harmless, blacklist, clean
+Blueliv -> harmless, blacklist, clean
+CINS Army -> harmless, blacklist, clean
+CLEAN MX -> harmless, blacklist, clean
+CRDF -> harmless, blacklist, clean
+Certego -> harmless, blacklist, clean
+Comodo Valkyrie Verdict -> harmless, blacklist, clean
+CyRadar -> harmless, blacklist, clean
+Cyan -> harmless, blacklist, clean
+CyberCrime -> harmless, blacklist, clean
+DNS8 -> harmless, blacklist, clean
+Dr.Web -> harmless, blacklist, clean
+ESET -> harmless, blacklist, clean
+ESTsecurity-Threat Inside -> harmless, blacklist, clean
+EmergingThreats -> harmless, blacklist, clean
+Emsisoft -> harmless, blacklist, clean
+EonScope -> harmless, blacklist, clean
+Forcepoint ThreatSeeker -> harmless, blacklist, clean
+Fortinet -> harmless, blacklist, clean
+FraudScore -> harmless, blacklist, clean
+G-Data -> harmless, blacklist, clean
+Google Safebrowsing -> harmless, blacklist, clean
+GreenSnow -> harmless, blacklist, clean
+Hoplite Industries -> harmless, blacklist, clean
+IPsum -> harmless, blacklist, clean
+K7AntiVirus -> harmless, blacklist, clean
+Kaspersky -> harmless, blacklist, clean
+Lumu -> harmless, blacklist, clean
+MalBeacon -> harmless, blacklist, clean
+MalSilo -> harmless, blacklist, clean
+Malware Domain Blocklist -> harmless, blacklist, clean
+MalwareDomainList -> harmless, blacklist, clean
+MalwarePatrol -> harmless, blacklist, clean
+Malwared -> harmless, blacklist, clean
+Netcraft -> harmless, blacklist, clean
+NotMining -> harmless, blacklist, clean
+Nucleon -> harmless, blacklist, clean
+OpenPhish -> harmless, blacklist, clean
+PREBYTES -> harmless, blacklist, clean
+PhishLabs -> harmless, blacklist, clean
+Phishing Database -> harmless, blacklist, clean
+Phishtank -> harmless, blacklist, clean
+Quick Heal -> harmless, blacklist, clean
+Quttera -> harmless, blacklist, clean
+SCUMWARE.org -> harmless, blacklist, clean
+SecureBrain -> harmless, blacklist, clean
+Segasec -> harmless, blacklist, clean
+Snort IP sample list -> harmless, blacklist, clean
+Sophos -> harmless, blacklist, clean
+Spam404 -> harmless, blacklist, clean
+Spamhaus -> harmless, blacklist, clean
+StopBadware -> harmless, blacklist, clean
+StopForumSpam -> harmless, blacklist, clean
+Sucuri SiteCheck -> harmless, blacklist, clean
+Tencent -> harmless, blacklist, clean
+ThreatHive -> harmless, blacklist, clean
+Threatsourcing -> harmless, blacklist, clean
+Trustwave -> harmless, blacklist, clean
+URLhaus -> harmless, blacklist, clean
+VX Vault -> harmless, blacklist, clean
+Virusdie External Site Scan -> harmless, blacklist, clean
+Web Security Guard -> harmless, blacklist, clean
+Yandex Safebrowsing -> harmless, blacklist, clean
+ZeroCERT -> harmless, blacklist, clean
+desenmascara.me -> harmless, blacklist, clean
+malwares.com URL checker -> harmless, blacklist, clean
+securolytics -> harmless, blacklist, clean
+zvelo -> harmless, blacklist, clean

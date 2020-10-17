@@ -1,0 +1,85 @@
+(2/82)
+¥iºÃ¼Æ¶q¡G2
+id: 172.252.180.10
+type: ip_address
+ADMINUSLabs -> harmless, blacklist, clean
+AegisLab WebGuard -> harmless, blacklist, clean
+AlienVault -> harmless, blacklist, clean
+Antiy-AVL -> harmless, blacklist, clean
+Artists Against 419 -> harmless, blacklist, clean
+AutoShun -> undetected, blacklist, unrated
+Avira -> harmless, blacklist, clean
+BADWARE.INFO -> harmless, blacklist, clean
+Baidu-International -> harmless, blacklist, clean
+BitDefender -> harmless, blacklist, clean
+BlockList -> suspicious, blacklist, suspicious
+Blueliv -> harmless, blacklist, clean
+CINS Army -> harmless, blacklist, clean
+CLEAN MX -> harmless, blacklist, clean
+CRDF -> harmless, blacklist, clean
+Certego -> harmless, blacklist, clean
+Comodo Valkyrie Verdict -> malicious, blacklist, malicious
+CyRadar -> harmless, blacklist, clean
+Cyan -> undetected, blacklist, unrated
+CyberCrime -> harmless, blacklist, clean
+Cyren -> harmless, blacklist, clean
+DNS8 -> harmless, blacklist, clean
+Dr.Web -> harmless, blacklist, clean
+ESET -> harmless, blacklist, clean
+ESTsecurity-Threat Inside -> harmless, blacklist, clean
+EmergingThreats -> harmless, blacklist, clean
+Emsisoft -> harmless, blacklist, clean
+EonScope -> harmless, blacklist, clean
+Feodo Tracker -> harmless, blacklist, clean
+Forcepoint ThreatSeeker -> undetected, blacklist, unrated
+Fortinet -> harmless, blacklist, clean
+FraudScore -> harmless, blacklist, clean
+G-Data -> harmless, blacklist, clean
+Google Safebrowsing -> harmless, blacklist, clean
+GreenSnow -> harmless, blacklist, clean
+Hoplite Industries -> harmless, blacklist, clean
+IPsum -> malicious, blacklist, malicious
+K7AntiVirus -> harmless, blacklist, clean
+Kaspersky -> undetected, blacklist, unrated
+Lumu -> undetected, blacklist, unrated
+MalSilo -> harmless, blacklist, clean
+Malware Domain Blocklist -> harmless, blacklist, clean
+MalwareDomainList -> harmless, blacklist, clean
+MalwarePatrol -> harmless, blacklist, clean
+Malwared -> harmless, blacklist, clean
+Netcraft -> undetected, blacklist, unrated
+NotMining -> undetected, blacklist, unrated
+Nucleon -> harmless, blacklist, clean
+OpenPhish -> harmless, blacklist, clean
+PREBYTES -> harmless, blacklist, clean
+PhishLabs -> undetected, blacklist, unrated
+Phishing Database -> harmless, blacklist, clean
+Phishtank -> harmless, blacklist, clean
+Quick Heal -> harmless, blacklist, clean
+Quttera -> harmless, blacklist, clean
+Rising -> harmless, blacklist, clean
+SCUMWARE.org -> harmless, blacklist, clean
+Sangfor -> harmless, blacklist, clean
+SecureBrain -> harmless, blacklist, clean
+Segasec -> harmless, blacklist, clean
+Snort IP sample list -> harmless, blacklist, clean
+Sophos -> harmless, blacklist, clean
+Spam404 -> harmless, blacklist, clean
+Spamhaus -> harmless, blacklist, clean
+StopBadware -> undetected, blacklist, unrated
+StopForumSpam -> harmless, blacklist, clean
+Sucuri SiteCheck -> harmless, blacklist, clean
+Tencent -> harmless, blacklist, clean
+ThreatHive -> harmless, blacklist, clean
+Threatsourcing -> suspicious, blacklist, suspicious
+Trustwave -> harmless, blacklist, clean
+URLhaus -> harmless, blacklist, clean
+VX Vault -> harmless, blacklist, clean
+Virusdie External Site Scan -> harmless, blacklist, clean
+Web Security Guard -> harmless, blacklist, clean
+Yandex Safebrowsing -> harmless, blacklist, clean
+ZeroCERT -> harmless, blacklist, clean
+desenmascara.me -> harmless, blacklist, clean
+malwares.com URL checker -> harmless, blacklist, clean
+securolytics -> harmless, blacklist, clean
+zvelo -> harmless, blacklist, clean
