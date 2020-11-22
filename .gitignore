@@ -1,4 +1,5 @@
 .idea
 __pycache__
-*.py
 *.ui
+*.7z
+md5.py
