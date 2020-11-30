@@ -15,13 +15,19 @@ def grep_data(web_response, path, spare=None):
     try:
         analysis_data = response_to_json['data']['attributes']['last_analysis_results']
         status = response_to_json['data']['attributes']['last_analysis_stats']
+        scantotal = list()  # 從各廠商掃描結果計算總數
+        for key in analysis_data.keys():
+            scantotal.append(analysis_data[key].get('category'))
+            # print(analysis_data[key].get('category'))
         count = int()  # 各狀態加總
         malicious_num = status.get('malicious')  # 有害數量
         suspicious_num = status.get('suspicious')  # 可疑數量
         for status_name, status_value in status.items():
             count += status_value
+            # count += status_value
         combined_calc = malicious_num + suspicious_num  # 給加入、解管用的值
-        fp.writelines(f"({malicious_num}/{count})\n")
+        # fp.writelines(f"({malicious_num}/{count})\n")
+        fp.writelines(f"({malicious_num}/{len(scantotal)})\n")
         fp.writelines(f"可疑數量：{suspicious_num}\n")
         call_count = 0
         if bool(analysis_data) is False and call_count == 0:  # 只讓程式再呼叫一次
